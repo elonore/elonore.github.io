@@ -1,7 +1,7 @@
 /* START OF SCROOL REVEAL */
 
 const sr = ScrollReveal({ 
-  duration: 1500,
+  duration: 1000,
   reset: true
 });
 
@@ -17,11 +17,11 @@ sr.reveal('.person-name', {
 });
 
 sr.reveal('section-1-btn' , {
- delay: 750
+ delay: 550
 });
 
 sr.reveal('.project' , {
-  delay: 1000
+  delay: 500
 }, 50);
           
 
