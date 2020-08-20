@@ -93,6 +93,11 @@ a, a:visited{
   flex-direction: column;
 }
 
+.section-1 h1 {
+  text-align: center;
+  padding: 0 2rem;
+  }
+
 .section-1-heading {
   font-size: 4rem;
   font-weight: 700;
@@ -122,7 +127,7 @@ a, a:visited{
 
 .person-name {
   font-size: 2rem;
-  color: ##000;
+  color: #000;
   background-color: #fccbcb;
   margin: 5rem 0;
   padding: 0.5rem 3rem;
@@ -145,6 +150,7 @@ a, a:visited{
 .section-1-btn:hover {
   background-color: #fccbcb ;
 }
+
 /* End of Section 1 */
 
 /* Navbar */
@@ -203,12 +209,10 @@ a, a:visited{
 .about-section {
   display: grid;
   width: 100%;
-  height: 700px;
   grid-template-columns: 55% 45%;
   background-color: #fdfdfd;
   overflow: hidden;
   font-family:'Montserrat', sans-serif;
-  /* padding: 100px 0; */
 }
 
 .section-2-img {
@@ -219,8 +223,8 @@ a, a:visited{
 .inner-container { 
   float: right; 
   background-color: #fdfdfd;
-  padding: 8rem 4rem;
-  margin: 120px 0 100px -150px;
+  padding: 8rem 5rem;
+  margin: 14rem 0 11rem -180px;
   z-index: 10;
 }
 
@@ -228,6 +232,7 @@ a, a:visited{
   margin-bottom: 3rem;
   font-size: 4rem;
   font-weight: 900;
+  width: 100%;
 }
 
 .text {
@@ -272,6 +277,9 @@ a, a:visited{
 }
 
 @media screen and (max-width: 1024px){
+  .inner-container {
+    margin-left: -300px;
+  }
   .container{
     background-size: 100%;
   }
@@ -284,37 +292,35 @@ a, a:visited{
 }
 
 @media screen and (max-width:1200px){
-   .inner-container{ 
-      padding: 80px;
-  }
   .skills .button-cv {
     display: block;
   }
 }
 
 @media screen and (max-width:1000px){
-  .section-2 {
-      background-size: 100%;
-      padding: 100px 40px;
-  }
-  .inner-container { 
-      width: 100%;
-  }
   .skills span {
     display: none;
   }
   .skills .button-cv {
     display: block;
   }
-
 }
 
 @media screen and (max-width:600px){
   .section-2 {
       padding: 0;
   }
-  .inner-container{
-      padding: 60px;
+  .section-2-img {
+    display: none;
+  }
+  .about-section {
+    display: block;
+  }
+  .inner-container {
+    margin: 0;
+  }
+  .inner-container h1 {
+    padding: 4rem 0;
   }
   .skills span {
     display: none;
@@ -522,16 +528,11 @@ a, a:visited{
     color: #fff;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
+    z-index: 20;
   }
 /* End of back to top styling */
 
 /* Start of Responsive */
-@media (max-width: 1200px) {
-  .section-4 {
-    height: 80vh;
-  }
-}
-
 @media (max-width: 800px) {
   .section-1-heading {
     font-size: 4rem;
