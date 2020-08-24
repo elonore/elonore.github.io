@@ -13,8 +13,8 @@
 }
 
 @font-face {
-  font-family: "Mulish";
-  src: url(assets/fonts/Mulish-Regular.ttf);
+  font-family: "Muli";
+  src: url(assets/fonts/Muli.ttf);
 }
 
 /* End of Fonts */
@@ -39,11 +39,8 @@ a, a:visited{
   color: #000;
 }
 
-
-
-/* html.sr .load-hidden { 
- visibility: hidden; */
-
+/* html.sr .load-hidden {  
+ visibility: hidden;*/
 
 .center {
   display: flex;
@@ -156,10 +153,10 @@ a, a:visited{
 /* Navbar */
 .navbar {
   width: 100%;
-  height: 4rem;
+  height: 7rem;
   background-color: #d9adad;
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
-  padding: 2rem 0;
+  padding: 4rem 0;
   position: absolute;
   z-index: 300;
 }
@@ -228,7 +225,7 @@ a, a:visited{
   z-index: 10;
 }
 
- .inner-container h1 { 
+ .inner-container h2 { 
   margin-bottom: 3rem;
   font-size: 4rem;
   font-weight: 900;
@@ -237,11 +234,11 @@ a, a:visited{
 
 .text {
   font-size: 1.6rem;
-  color: #545454;
+  color: #000;
   line-height: 30px;
   text-align: justify;
   margin-bottom: 4rem;
-  font-family: "Mulish";
+  font-family: 'Baloo Tamma 2', cursive;
 }
 
 .skills {
@@ -277,6 +274,10 @@ a, a:visited{
 }
 
 @media screen and (max-width: 1024px){
+  .section-1 {
+    padding: 40rem 0;
+  }
+  
   .inner-container {
     margin-left: -300px;
   }
@@ -308,7 +309,7 @@ a, a:visited{
 
 @media screen and (max-width:600px){
   .section-2 {
-      padding: 0;
+    padding: 0;
   }
   .section-2-img {
     display: none;
@@ -319,7 +320,7 @@ a, a:visited{
   .inner-container {
     margin: 0;
   }
-  .inner-container h1 {
+  .inner-container h2 {
     padding: 4rem 0;
   }
   .skills span {
@@ -508,7 +509,8 @@ a, a:visited{
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
   font-weight: 300;
-  font-family: 'Mulish';
+  font-family: 'Baloo Tamma 2', cursive;
+  text-align: center;
 
 }
 /* End of Section 5 Footer*/
